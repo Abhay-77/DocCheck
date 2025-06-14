@@ -6,7 +6,6 @@ import Link from "next/link";
 const LandingPage = () => {
   return (
     <>
-      <NavBar />
       <section className="bg-neutral-100 min-h-[90vh] flex justify-evenly items-center p-8">
         <Image
           className="rounded-xl"

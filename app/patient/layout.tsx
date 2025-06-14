@@ -4,9 +4,9 @@ import { MdAccountCircle } from "react-icons/md";
 
 export const Nav = () => {
   const customerNavItems = [
-    {title:'Home',link:'/'},
-    { title: "Hospitals", link: "/customer" },
-    { title: "Doctors", link: "/customer/doctors" },
+    { title: "Home", link: "/" },
+    { title: "Hospitals", link: "/patient" },
+    { title: "Doctors", link: "/patient/doctors" },
     { title: "Account", link: "/account" },
   ];
   return (

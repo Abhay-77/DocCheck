@@ -8,7 +8,7 @@ const HospitalCard = () => {
       <h1 className="">Hospital Name</h1>
       <h2 className="">Location</h2>
       <Link
-        href={"/customer/doctors"}
+        href={"/patient/doctors"}
         className="flex w-34 items-center gap-1 bg-gray-300 py-1 px-2 rounded hover:bg-gray-400"
       >
         View doctors

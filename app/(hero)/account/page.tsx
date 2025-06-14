@@ -1,10 +1,8 @@
 import React from "react";
-import { Nav } from "../customer/layout";
 
 const AccounPage = () => {
   return (
     <>
-      <Nav />
       <section className="flex p-2">
         <div className="bg-white p-4 rounded-xl flex flex-col gap-1">
           <h1 className="font-medium text-lg">Name</h1>

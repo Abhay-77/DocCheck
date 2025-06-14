@@ -3,7 +3,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <section className="h-screen w-screen bg-neutral-200 flex items-center justify-center">
+    <section className="h-[90vh] w-screen bg-neutral-200 flex items-center justify-center">
       <form
         action=""
         className="bg-white w-[30%] rounded-lg p-8 gap-6 flex flex-col"

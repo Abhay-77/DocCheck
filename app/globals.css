@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.about h1 {
+  @apply font-bold text-3xl underline;
+}
+
+.about h2 {
+  @apply font-semibold text-xl;
+}
+
+.about p {
+  @apply text-lg;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -118,4 +130,3 @@
     @apply bg-background text-foreground;
   }
 }
-
