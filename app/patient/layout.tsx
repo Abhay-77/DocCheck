@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { MdAccountCircle } from "react-icons/md";
 
-export const Nav = () => {
+const Nav = () => {
   const customerNavItems = [
     { title: "Home", link: "/" },
     { title: "Hospitals", link: "/patient" },
