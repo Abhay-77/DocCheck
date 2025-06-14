@@ -52,13 +52,13 @@ Visit http://localhost:3000 to view the app in your browser.
 
 ### 🗂️ Project Structure
 
-/components      → Reusable UI components (Navbar, DoctorCard, etc.)
-/pages           → Next.js routing pages (index.js, about.js, etc.)
-/styles          → Global and Tailwind styles
-/utils           → Helper functions (Supabase client, date utilities)
-/public          → Static assets (images, icons)
-/lib             → Auth or API integration files
+- /components      → Reusable UI components (Navbar, DoctorCard, etc.)
+- /pages           → Next.js routing pages (index.js, about.js, etc.)
+- /styles          → Global and Tailwind styles
+- /utils           → Helper functions (Supabase client, date utilities)
+- /public          → Static assets (images, icons)
+- /lib             → Auth or API integration files
 
 ### 🔐 License
 
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License.
