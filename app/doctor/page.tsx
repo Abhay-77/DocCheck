@@ -21,12 +21,7 @@ const page = async () => {
         </form>
         <h1 className="font-medium underline my-2">Appointments</h1>
         <div className="flex gap-1 p-4 flex-wrap">
-            <PatientCard />
-            <PatientCard />
-            <PatientCard />
-            <PatientCard />
-            <PatientCard />
-            <PatientCard />
+            
         </div>
       </section>
     </>
