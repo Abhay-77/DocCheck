@@ -10,7 +10,7 @@ const Nav = () => {
     { title: "Account", link: "/account" },
   ];
   return (
-    <header className="flex justify-between items-center h-16 bg-neutral-500 p-6">
+    <header className="flex justify-between items-center h-16 bg-neutral-200 p-6">
       <h2 className="flex items-center gap-1">
         <MdAccountCircle size={28} color="black" />
         Customer Name
