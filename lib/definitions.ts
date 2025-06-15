@@ -7,3 +7,8 @@ export type MyUser = {
   appintments:Number
   appointment:string[]
 };
+
+export interface Appointment {
+  name: string;
+  appointment_time: Date | string;
+}
