@@ -3,9 +3,14 @@ import Link from 'next/link'
 import React from 'react'
 
 const NavBar = () => {
-    const navItems = [{title:"Home",link:'/'},{title:'About',link:'/about'},{title:'Login',link:'/login'}
-      ,{title:'Account',link:'/account'}
-    ]
+    const navItems = [
+      { title: "Home", link: "/" },
+      { title: "About", link: "/about" },
+      { title: "Login", link: "/login" },
+      { title: "Account", link: "/account" },
+      { title: "Doctor", link: "/doctor" },
+      { title: "Patient", link: "/patient" },
+    ];
   return (
     <nav className="bg-gray-300 h-14 flex items-center p-8 justify-between">
       <div className="flex gap-2">
