@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { MdAccountCircle } from "react-icons/md";
+import { auth } from "@/auth";
 
 const Nav = () => {
   const customerNavItems = [
@@ -26,11 +27,13 @@ const Nav = () => {
   );
 };
 
-export default function layout({
+export default async function layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await auth()
+  console.log(session?.user)
   return (
     <>
       <Nav />

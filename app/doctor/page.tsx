@@ -1,16 +1,19 @@
+import { auth } from "@/auth";
 import PatientCard from "@/components/PatientCard";
 import { Switch } from "@/components/ui/switch";
 import Link from "next/link";
 import React from "react";
 import { MdAccountCircle } from "react-icons/md";
 
-const page = () => {
+const page = async () => {
+  const session = await auth()
+  const user = session?.user!;
   return (
     <>
-      <NavD />
+      <NavD name={user.name!} />
       <section className="min-h-[90vh] p-2">
         <form action="">
-          <div className="">Appointments : </div>
+          <div className="">Appointments : 0</div>
           <div className="flex gap-1 items-center">
             Are you available? No
             <Switch type="submit" /> Yes
@@ -30,16 +33,18 @@ const page = () => {
   );
 };
 
-const NavD = () => {
+const NavD = ({name}:{name:string}) => {
   const customerNavItems = [
     { title: "Home", link: "/" },
     { title: "Account", link: "/account" },
   ];
   return (
     <header className="flex justify-between items-center h-16 bg-neutral-500 p-6">
-      <h2 className="flex items-center gap-1">
+      <h2 className="flex items-center gap-1 text-2xl font-semibold">
+        <Link href={'/account'}>
         <MdAccountCircle size={28} color="black" />
-        Doctor Name
+        </Link>
+        {name}
       </h2>
       <div className="flex gap-4">
         {customerNavItems.map((item) => (
